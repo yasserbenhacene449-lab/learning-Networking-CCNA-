@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot 2026-06-21 211224" src="https://github.com/user-attachments/assets/acd76ba1-1731-4d4e-a6e7-e2b1da9401d0" />
 # learning-Networking-CCNA-
 Daily hands-on lab documentation for Linux System Administration, Cloud Security, and Cisco CCNA networking fundamentals, tailored for corporate IT environments.
 ---
