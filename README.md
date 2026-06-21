@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="Screenshot 2026-06-21 211224" src="https://github.com/user-attachments/assets/acd76ba1-1731-4d4e-a6e7-e2b1da9401d0" />
 # learning-Networking-CCNA-
 Daily hands-on lab documentation for Linux System Administration, Cloud Security, and Cisco CCNA networking fundamentals, tailored for corporate IT environments.
 ---
@@ -19,7 +18,11 @@ Daily hands-on lab documentation for Linux System Administration, Cloud Security
 *   **Key Validated Skills:**
     *   Correctly identified the **Switch** as the appropriate device for high-density local endpoint connectivity (e.g., connecting 30 departmental PCs).
     *   Validated the functional difference between an end-host acting as a server vs. a client in peer-to-peer (P2P) transactions (e.g., AirDrop).
+ 
+    *   
     *   Demonstrated understanding of a **Router's** primary core competency in interconnecting separate networks over a Firewall or Switch.
     *   Distinguished **Next-Generation Firewalls (NGFW)** from traditional and host-based firewalls by identifying their advanced threat filtering capabilities.
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-21 211224" src="https://github.com/user-attachments/assets/32fb9f0f-89a4-447e-bf74-20c84f52ed19" />
 
 ---
