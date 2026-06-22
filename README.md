@@ -42,4 +42,5 @@ Daily hands-on lab documentation for Linux System Administration, Cloud Security
 > Physical interfaces on enterprise devices (Routers and Firewalls) are shut down by default for security, requiring active administration (`no shutdown` command) to bring the links up.
 > <img width="1930" height="1167" alt="Screenshot 2026-06-22 172345" src="https://github.com/user-attachments/assets/e7a248ad-5ce7-47ae-b18d-b3c48c26f95e" />
 <img width="1920" height="1080" alt="Screenshot 2026-06-22 172310" src="https://github.com/user-attachments/assets/65bdef0f-9e17-40be-a978-4292241f74e4" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/c51b6a23-8083-4ffb-a69d-d7490b1d1616" />
 
