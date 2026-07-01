@@ -43,4 +43,53 @@ Daily hands-on lab documentation for Linux System Administration, Cloud Security
 > <img width="1930" height="1167" alt="Screenshot 2026-06-22 172345" src="https://github.com/user-attachments/assets/e7a248ad-5ce7-47ae-b18d-b3c48c26f95e" />
 <img width="1920" height="1080" alt="Screenshot 2026-06-22 172310" src="https://github.com/user-attachments/assets/65bdef0f-9e17-40be-a978-4292241f74e4" />
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/c51b6a23-8083-4ffb-a69d-d7490b1d1616" />
+# Core Networking Essentials: The TCP/IP Model
+
+This document serves as a technical reference for foundational networking concepts required for **System Administration** and **Cloud Engineering**. It focuses on understanding how data moves through a network without diving into vendor-specific hardware configurations.
+
+---
+
+## 🔑 Key Concepts
+
+### 1. Protocols & Standards
+* **Protocol:** A set of rules or "languages" that computers use to communicate with each other over a network.
+* **Standard:** An agreed-upon, vendor-neutral specification (such as those defined by the IETF or IEEE) ensuring that devices from different manufacturers (e.g., Linux servers, Windows PCs, Macs) can seamlessly exchange data.
+
+### 2. The 5-Layer TCP/IP Model
+
+| Layer | Name | Core Function | Protocol Data Unit (PDU) | Key Examples |
+| :--- | :--- | :--- | :--- | :--- |
+| **Layer 5** | **Application** | Enables user-facing software applications to format and interpret data. | Data | HTTP, HTTPS, DNS, SSH |
+| **Layer 4** | **Transport** | Manages end-to-end communication between specific application processes using **Port Numbers**. | **Segment** (TCP) / **Datagram** (UDP) | TCP, UDP |
+| **Layer 3** | **Network / Internet** | Handles end-to-end delivery of data between hosts across multiple networks using **IP Addresses**. | **Packet** | IPv4, IPv6, ICMP |
+| **Layer 2** | **Data Link / Local Network** | Manages hop-to-hop delivery of data within the same local area network (LAN) using **MAC Addresses**. | **Frame** | Ethernet, Wi-Fi |
+| **Layer 1** | **Physical** | Transmits raw bits as electrical, optical, or radio signals over physical media. | Bits | Cables, Fiber, NICs |
+
+---
+
+## 🔄 Data Encapsulation & Decapsulation
+
+Understanding how data is wrapped and unwrapped is essential for troubleshooting firewalls, routing, and cloud security groups.
+
+### Encapsulation (Sending Data)
+As data travels down the network stack from the **Application Layer** to the **Physical Layer**, each layer adds a **Header** (and sometimes a Trailer) containing control information:
+1. **Application Data** is passed to Layer 4.
+2. Layer 4 adds port numbers, creating a **Segment**.
+3. Layer 3 adds source and destination IP addresses, creating a **Packet**.
+4. Layer 2 adds source and destination MAC addresses along with error-checking codes, creating a **Frame**.
+5. Layer 1 converts the frame into raw signals to cross the physical medium.
+
+### Decapsulation (Receiving Data)
+The receiving host processes this in reverse. It strips away the headers layer-by-layer, verifying the control information (MACs, IPs, and Ports) until the raw application data safely reaches the intended program.
+
+---
+
+## 💡 System & Cloud Architecture Takeaways
+
+* **Port Numbers (Layer 4):** Act like "apartment numbers" inside a server host. For cloud security groups and firewalls, knowing ports is critical (e.g., **Port 22** for SSH, **Port 80/443** for Web Services).
+* **IP Addressing (Layer 3):** The global address of the host machine. This forms the absolute baseline for setting up Virtual Private Clouds (VPCs) and subnets in cloud environments.
+* **Payload:** The actual data carried within a specific PDU layer, excluding that layer's own header or trailer.
+* <img width="1920" height="1080" alt="Screenshot 2026-07-01 121035" src="https://github.com/user-attachments/assets/09e24388-045b-4b02-8bbc-688d26faf189" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-01 121154" src="https://github.com/user-attachments/assets/f1151009-5f55-4c89-a405-fe4719564d08" />
+
 
