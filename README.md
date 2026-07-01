@@ -48,6 +48,8 @@ Daily hands-on lab documentation for Linux System Administration, Cloud Security
 This document serves as a technical reference for foundational networking concepts required for **System Administration** and **Cloud Engineering**. It focuses on understanding how data moves through a network without diving into vendor-specific hardware configurations.
 
 ---
+<img width="1920" height="1080" alt="Screenshot 2026-07-01 145219" src="https://github.com/user-attachments/assets/f4bc67d9-ae86-42c2-a7b7-f2a4ce1e1593" />
+
 
 ## 🔑 Key Concepts
 
